@@ -4,7 +4,7 @@ import {FC} from "react";
 const App:FC = () => {
     return (
         <div>
-          hi
+          <h1>hello world </h1>
         </div>
     );
 };
