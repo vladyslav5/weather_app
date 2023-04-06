@@ -4,9 +4,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const path = require("path")
 module.exports = {
     mode: "development",
-    entry: ["@babel/polyfill", "./index.jsx"],
+    entry: ["@babel/polyfill", "./index.tsx"],
     resolve: {
-        extensions: [".js", ",ts", ".jsx"]
+        extensions: [".js", ",ts", ".jsx",".tsx"]
     },
     output: {
         path: path.resolve(__dirname, "dist"),
@@ -15,7 +15,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /(.jsx$)/,
+                test: /(.ts|tsx$)/,
                 loader: "babel-loader",
                 exclude: /node_modules/
             }

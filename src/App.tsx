@@ -1,6 +1,7 @@
-import React from 'react';
+import * as React from 'react'
+import {FC} from "react";
 
-const App = () => {
+const App:FC = () => {
     return (
         <div>
           hi
