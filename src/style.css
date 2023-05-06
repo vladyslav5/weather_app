@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.suggestion {
+    visibility: hidden;
+    transition: visibility .3s ease-in-out;
+}
+
+.search-box:focus-within .suggestion {
+    visibility: visible;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+.origin {
+    transform-origin: 50% 100%;
+}
+
+.container {
+    @apply bg-gray-100 w-screen xl:flex;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(-180deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.spin {
+    animation: spin 6s linear infinite;
+}
