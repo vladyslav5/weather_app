@@ -7,8 +7,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "dev": "npx webpack serve",
-    "build": "npx webpack --mode production "
+    "dev": "set NODE_ENV=dev npx webpack serve",
+    "build": "set NODE_ENV=production && npx webpack"
   },
   "keywords": [],
   "author": "",
