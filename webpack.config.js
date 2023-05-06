@@ -11,7 +11,7 @@ module.exports = {
         extensions: [".js", ".ts", ".jsx", ".tsx"]
     },
     output: {
-        path: path.resolve(__dirname, "dist"), filename: "[contenthash][name].js", publicPath: "/"
+        path: path.resolve(__dirname,"build"), filename: dev ? "[contenthash][name].js" : "bundle.js", publicPath: "/"
     },
     module: {
         rules: [{

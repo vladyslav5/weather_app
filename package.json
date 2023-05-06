@@ -5,8 +5,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "npx webpack serve",
-    "build": "webpack --mode production --progress --hide-modules"
+    "build": "webpack --mode production "
   },
   "keywords": [],
   "author": "",
